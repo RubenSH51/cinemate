@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cinemate - Contact us 📩</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <link rel="stylesheet" href="../css/general.css">
+    <link rel="stylesheet" href="../css/contactus.css">
+    
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+    <header>
+
+        <div class="header-logo">
+            <h2><a href="/cinemate/">Cinemate <i class="fas fa-rocket"></i></a></i></h2>
+        </div>
+
+        <div class="header-nav">
+            <nav>
+                <a href="/cinemate/">Home 🏠</a>
+                <a href="/cinemate/html/trending.html">Trending 🔥</a>
+                <a href="/cinemate/html/toprated.html">Top Rated 🌟</a>
+                <a href="/cinemate/html/upcoming.html">Upcoming 😲</a>
+                <a href="/cinemate/html/contactus.html" class="selected">Contact us 📩</a>
+            </nav>
+        </div>
+
+        <!-- Botón hamburguesa -->
+        <button class="hamburger-btn">&#9776;</button>
+        <div class="mobile-nav">
+            <nav>
+                <a href="/cinemate/" class="selected">Home 🏠</a>
+                <a href="/cinemate/html/trending.html">Trending 🔥</a>
+                <a href="/cinemate/html/toprated.html">Top Rated 🌟</a>
+                <a href="/cinemate/html/upcoming.html">Upcoming 😲</a>
+                <a href="/cinemate/html/contactus.html">Contact us 📩</a>
+            </nav>
+        </div>
+
+    </header>
+
+    <main>
+        <div class="text-form">
+            <h2>¡Gracias por visitar nuestra página de películas!</h2>
+            <p>Tu opinión y comentarios son muy importantes para nosotros. Si tienes alguna pregunta, sugerencia, o deseas reportar un problema en nuestro sitio, por favor completa el siguiente formulario y nos pondremos en contacto contigo lo antes posible.</p>
+        </div>
+        <!-- <h2>Formulario de contacto</h2> -->
+        <div class="container">
+            <h2>Contáctanos</h2>
+            <form id="contact-form">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" >
+
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" >
+
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="4" ></textarea>
+
+                <button type="button" onclick="validacion()">Enviar</button>
+            </form>
+            <p id="mensajeEstado"></p>
+        </div>
+    </main>
+
+    <footer>
+        <small>© Todos los derechos reservados</small>
+    </footer>
+
+    <script src="../js/contactus.js"></script>
+    <script src="../js/general.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cinemate - Top Rated 🌟</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <link rel="stylesheet" href="../css/general.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+
+        <div class="header-logo">
+            <h2><a href="/cinemate/">Cinemate <i class="fas fa-rocket"></i></a></i></h2>
+        </div>
+
+        <div class="header-nav">
+            <nav>
+                <a href="/cinemate/">Home 🏠</a>
+                <a href="/cinemate/html/trending.html">Trending 🔥</a>
+                <a href="/cinemate/html/toprated.html" class="selected">Top Rated 🌟</a>
+                <a href="/cinemate/html/upcoming.html">Upcoming 😲</a>
+                <a href="/cinemate/html/contactus.html">Contact us 📩</a>
+            </nav>
+        </div>
+
+        <!-- Botón hamburguesa -->
+        <button class="hamburger-btn">&#9776;</button>
+        <div class="mobile-nav">
+            <nav>
+                <a href="/cinemate/" class="selected">Home 🏠</a>
+                <a href="/cinemate/html/trending.html">Trending 🔥</a>
+                <a href="/cinemate/html/toprated.html">Top Rated 🌟</a>
+                <a href="/cinemate/html/upcoming.html">Upcoming 😲</a>
+                <a href="/cinemate/html/contactus.html">Contact us 📩</a>
+            </nav>
+        </div>
+
+    </header>
+
+    <main>
+        <p class="text-home"><strong>Las mejores películas</strong> <br> Disfruta de las películas mejor calificadas por nuestra comunidad de cinéfilos</p>
+        <div class="paginacion">
+            <button type="button" class="paginacionBTN" onclick="previousPage()">⬅️</button>
+            <h3 id="page"></h3>
+            <button type="button" class="paginacionBTN" onclick="nextPage()"    >➡️</button>
+        </div>
+
+        <div class="movies-container" id="movies-container">
+        </div>
+        
+    </main>
+
+    <footer>
+        <small>© Todos los derechos reservados</small>
+    </footer>
+
+
+    <!-- MODAL -->
+    <div id="overlay">
+        <div class="modal" id='modal'>
+            <span onclick="modalDeactivated()"></span>
+
+            <div id="imagen" >
+                <img src="" id="imagen-movie" alt="Imagen de la pelicula">
+                <span>⭐</span>
+                <span  id="calificacion-movie"></span>
+            </div>
+
+            <div id="contenido-modal">
+                <p id="nombre-movie"></p>
+                <p id="genero-movie"></p>
+                <p id="date-movie"></p>
+                <p id="duracion-movie"></p>
+                <p  id="sinopsis-movie"></p>
+                
+            </div>
+
+        </div>
+    </div>
+
+    <script src="../js/toprated.js"></script>
+    <script src="../js/general.js"></script>
+</body>
+</html>

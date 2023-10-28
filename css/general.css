@@ -1,0 +1,494 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    background-color: rgb(29,41,58);
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Estilos para pantalla grande */
+.header-nav {
+    display: block;
+}
+.hamburger-btn {
+    display: none;
+}
+
+
+.selected
+{
+    color: red;
+}
+
+
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Header*/
+
+header
+{
+    height: 75px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(17,24,39);
+    color: white;
+}
+
+
+header div:nth-child(1)
+{
+    padding-left: 50px;
+}
+
+header div:nth-child(2)
+{
+    padding-right: 50px;
+}
+
+header div nav a
+{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 0 10px;
+    color: white;
+}
+
+
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Movies container*/
+
+.movies-container
+{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 10px;
+    margin: 20px auto;
+}
+
+
+
+
+
+.moviecard:hover
+{
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    opacity: 0.4;
+}
+
+
+.moviecard {
+    transition: 0.5s all;
+    border: 1px solid #ccc;
+    padding: 20px; 
+    margin: 10px;
+    background-color: #f9f9f9; 
+    border-radius: 5px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    text-align: center; 
+    cursor: pointer;
+}
+.moviecard h2 {
+    font-size: 24px; 
+    color: #333; 
+}
+.moviecard img {
+    width: 100%; 
+    height: auto; 
+    margin-top: 10px; 
+}
+.moviecard p { 
+    font-size: 16px; 
+    color: #666;
+}
+
+
+
+
+/* >>>>>>>>>>>>> Modal */
+
+.modal
+{
+    position: fixed;
+    background-color: rgb(209, 207, 207);
+    padding:40px;
+    outline: 2px solid rgb(6, 88, 61);
+    outline-offset: -0.5rem;
+    border: 2px solid green;
+    border-radius: 20px;
+    width: 50%;
+    max-height: 90vh;
+    left:50%;
+    top:50%;
+    transform:translate(-50%,-200%);
+
+    display: flex;
+    gap: 10px;
+    min-width: 600px;
+}
+
+.modal > div
+{
+    width: 50%;
+}
+
+
+.modal img
+{
+    width: 100%;
+}
+
+.modal h2
+{
+    font-size: 2.5rem;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.modal p
+{
+    font-size: 15px;
+    text-align: justify;
+    margin-bottom: 5px;
+}
+
+.modal > span
+{
+    position:absolute;
+    right:17px;
+    top: 12px;
+    cursor: pointer;
+    background: url('../assets/close.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 40px;
+    height: 40px;
+}
+
+.activado
+{
+    transform:translate(-50%, -50%);
+    transition: all 0.8s;
+}
+
+#overlay {
+    position:fixed;
+    left:0;
+    top:0;
+    width:100vw;
+    height:100vh;
+    display:none;
+    background-color:#000;
+    opacity:0.9;
+    z-index: 6;
+}
+
+
+#imagen
+{
+    position: relative;
+}
+
+.modal #imagen span:nth-child(2)
+{
+    font-size: 50px;
+    position: absolute;
+    right: 0px;
+}
+
+.modal #imagen span:nth-child(3)
+{
+    position: absolute;
+    right: 17px;
+    top: 18px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    
+}
+
+
+#nombre-movie
+{
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 10px;
+    font-weight: bolder;
+}
+
+.text-home {
+    text-align: center;
+    color: #ffffff;
+    font-size: 1.5rem;
+    margin-top: 20px;
+    line-height: 1.5;
+}
+
+
+/* >>>>>>>>>>>>>>>>> Footer*/
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+    background-color: rgb(17,24,39);
+    color: white;
+    font-size: 30px;
+    font-weight: bolder;
+    text-align: center;
+} 
+
+
+
+
+
+
+button
+{
+    width: 160px;
+    font-size: 15px;
+    font-weight: bold;
+    height: 40px;
+    margin: 10px auto;
+    border-radius: 5px;
+    background-color: transparent;
+    color: rgb(70, 70, 235);
+    border: 2px solid rgb(70, 70, 235);
+    transition: 0.3s all ease-in-out;
+}
+
+button:hover
+{
+    background-color: rgb(70, 70, 235);
+    color: white; 
+    border-radius: 10px;
+}
+
+button:hover a
+{
+    color: white;
+}
+
+a
+{
+    text-decoration: none;
+    color: rgb(70, 70, 235);
+}
+
+
+
+main
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#page
+{
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+
+
+
+
+/* Estilos para mobile-nav */
+.mobile-nav {
+    position: absolute;
+    top: 50px;
+    right: 0;
+    background-color: #333;
+    width: 200px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.mobile-nav a {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.mobile-nav a:hover {
+    background-color: #555;
+}
+
+/* Estilo para el botón de hamburguesa */
+.hamburger-btn {
+    display: none;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 40px;
+    font-size: 20px;
+    z-index: 1;
+}
+
+
+
+.mobile-nav
+{
+    display: none;
+    margin-top: 10px;
+}
+
+/* Estilo para mostrar mobile-nav cuando es necesario */
+.show {
+    display: block;
+}
+
+.paginacion
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.paginacionBTN
+{
+    width: 40px;
+    height: 40px;
+    font-size: 25px;
+    border: none;
+}
+.paginacionBTN:hover
+{
+    background-color: transparent;
+    transform: scale(1.1) ;
+}
+
+
+
+
+
+/* >>>>>>>>>>>>> Media Queries*/
+
+@media (max-width: 1024px)
+{
+    .movies-container
+    {
+        grid-template-columns: repeat(3,1fr);
+        gap: 10px;
+        margin: 20px auto;
+
+    }
+}
+@media (max-width: 725px)
+{
+    .movies-container
+    {
+        grid-template-columns: repeat(2,1fr);
+        gap: 10px;
+        margin: 20px auto;
+
+    }
+}
+
+@media (max-width: 550px)
+{
+    .movies-container
+    {
+        grid-template-columns: repeat(1,1fr);
+        gap: 10px;
+        margin: 20px auto;
+
+    }
+}
+
+
+/* Estilo para ocultar mobile-nav y el botón de hamburguesa en pantallas grandes */
+@media (min-width: 970px) {
+    .header-nav{
+        display: block;
+    }
+    .hamburger-btn {
+        display: none;
+    }
+    .mobile-nav {
+        display: none;
+    } 
+}
+
+/* Estilo para mostrar el botón de hamburguesa en pantallas pequeñas */
+@media (max-width: 970px) {
+    .header-nav{
+        display: none;
+    }
+    .hamburger-btn {
+        display: block;
+    }
+    /* .mobile-nav {
+        display: none;
+    } */
+}
+
+@media screen and (max-width: 425px)
+{
+    header
+    {
+        flex-direction: column;
+    }
+    header .hamburger-btn
+    {
+        position: unset;
+    }
+
+    header div:nth-child(1)
+    {
+        padding: 0;
+    }
+
+    .mobile-nav
+    {
+        width: 80%;
+        margin: -2px auto;
+        position: unset;
+        z-index: 5;
+    }
+    .mobile-nav nav a
+    {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+a
+{
+    text-decoration: none;
+    color: white;
+}
+
+
+/* >>>>>>>>>>> Media query del modal*/
+
+@media (max-width: 750px) 
+
+{
+    .modal
+    {
+        min-width: 400px;
+        width: 90%;
+    }
+
+    .modal .textos
+    {
+        font-size: 13px;
+    }
+}

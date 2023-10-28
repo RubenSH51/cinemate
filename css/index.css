@@ -1,0 +1,57 @@
+
+section
+{
+    width: 80%;
+    margin: 25px auto;
+    padding: 20px;
+    background-color: rgb(47, 47, 59);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    border: 3px solid #0a1542;
+    border-radius: 10px;
+    outline: 3px solid #ecf4ec;
+    outline-offset: -7px;
+}
+section > div
+{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+
+
+h3
+{
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+a
+{
+    text-decoration: none;
+    color: rgb(70, 70, 235);
+}
+
+
+@media (max-width: 1000px)
+{
+        section > div
+    {
+
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(2,1fr);
+    }
+}
+
+@media (max-width: 620px)
+{
+        section > div
+    {
+
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4,1fr);
+    }
+}

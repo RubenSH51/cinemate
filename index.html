@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cinemate - Home 🏠</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/general.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+    <header>
+
+        <div class="header-logo">
+            <h2><a href="/cinemate/">Cinemate <i class="fas fa-rocket"></i></a></i></h2>
+        </div>
+
+        <div class="header-nav">
+            <nav>
+                <a href="/cinemate/" class="selected">Home 🏠</a>
+                <a href="/cinemate/html/trending.html">Trending 🔥</a>
+                <a href="/cinemate/html/toprated.html">Top Rated 🌟</a>
+                <a href="/cinemate/html/upcoming.html">Upcoming 😲</a>
+                <a href="/cinemate/html/contactus.html">Contact us 📩</a>
+            </nav>
+        </div>
+
+        <!-- Botón hamburguesa -->
+        <button class="hamburger-btn">&#9776;</button>
+        <div class="mobile-nav">
+            <nav>
+                <a href="/cinemate/" class="selected">Home 🏠</a>
+                <a href="/cinemate/html/trending.html">Trending 🔥</a>
+                <a href="/cinemate/html/toprated.html">Top Rated 🌟</a>
+                <a href="/cinemate/html/upcoming.html">Upcoming 😲</a>
+                <a href="/cinemate/html/contactus.html">Contact us 📩</a>
+            </nav>
+        </div>
+
+    </header>
+
+    <main>
+        <h2 style="color:white;text-align: center;margin:20px;font-size: 32px;">¡Bienvenido a la experiencia del cine en línea!</h2>
+        <div>
+            <p class="text-home">En nuestra plataforma, encontrarás las películas más emocionantes, atrapantes y de acción en un solo lugar !Explora nuestras secciones principales! <br>  Ya sea que busques acción trepidante, dramas emocionantes o comedia para toda la familia, aquí encontrarás algo para cada ocasión. ¡Comienza tu viaje cinematográfico con nosotros hoy!</p>
+        </div>
+
+        <section>
+            <h3>Películas en tendencia</h3>
+            <div id="trending-movies">
+            </div>
+            <button type="button"><a href="/html/trending.html">Ver más resultados</a></button>
+        </section>
+
+        <section>
+            <h3>Próximos estrenos</h3>
+            <div id="upcoming-movies">
+            </div>
+            <button type="button"><a href="/html/upcoming.html">Ver más resultados</a></button>
+        </section>
+
+        <section>
+            <h3>Top rated movies</h3>
+            <div id="toprated-movies">
+            </div>
+            <button type="button"><a href="/html/toprated.html">Ver más resultados</a></button>
+        </section>
+    </main>
+
+    <footer>
+        <small>© Todos los derechos reservados</small>
+    </footer>
+
+    <!-- MODAL -->
+    <div id="overlay">
+        <div class="modal" id='modal'>
+            <span onclick="modalDeactivated()"></span>
+
+            <div id="imagen" >
+                <img src="" id="imagen-movie" alt="Imagen de la pelicula">
+                <span>⭐</span>
+                <span  id="calificacion-movie"></span>
+            </div>
+
+            <div id="contenido-modal">
+                <p id="nombre-movie"></p>
+                <p class="textos" id="genero-movie"></p>
+                <p class="textos" id="date-movie"></p>
+                <p class="textos" id="duracion-movie"></p>
+                <p class="textos" id="sinopsis-movie"></p>
+                
+                <!-- <p  id="calificacion-movie"></p> -->
+            </div>
+
+        </div>
+    </div>
+
+    <script src="js/index.js"></script>
+    <script src="js/general.js"></script>
+</body>
+</html>
