@@ -67,9 +67,13 @@ function buscarPelis(){
 window.addEventListener('load', function() {
   
   buscarPelis()
-  pelisEnModal()
+  setTimeout(() => {
+    pelisEnModal();
+  },300)
 
 });
+
+
 
 
 function pelisEnModal()
