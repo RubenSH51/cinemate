@@ -4,7 +4,8 @@ Cinemate es un sitio web que te permite explorar las últimas películas en tend
 
 ## Capturas de Pantalla
 
-![Cinemate](screenshot.png)
+![Cinemate](https://github.com/RubenSH51/cinemate/assets/75585470/41fd19f8-682b-4d63-89d8-3b795226137f)
+
 
 ## Características
 
